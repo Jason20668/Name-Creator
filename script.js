@@ -66,8 +66,8 @@ function genFullName(){
     //Capitalize Name Variables when needed
 const capitalizePrefix = capitalize(prefix)
 const capitalizeFirstName = capitalize(newFirstName)
-const capitalizePrefix = capitalize(middleName)
-const capitalizePrefix = capitalize(newLastName)
+const capitalizeMiddleName = capitalize(middleName)
+const capitalizeLastName = capitalize(newLastName)
     //Combine them together 
 
     //Display new name
