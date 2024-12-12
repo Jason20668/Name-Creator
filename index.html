@@ -50,17 +50,18 @@
                 <input type="text" class="form-control" id="favAminal" placeholder="Enter your Favorite Animal Group (Reptiles, Mammals, etc.)">
             </div>
             
-            <!--Get Road Type-->
+            <!--Get Road Type Change this for later-->
             <div class="mb-3">
                 <label for="roadType" class="form-label">Choose a Professional Title</label>
                 <select id="roadType" class="form-select">
-                    <option value="road">Dr.</option>
-                    <option value="street">Professor</option>
-                    <option value="avenue">Neither</option>
+                    <option value="dr">Dr.</option>
+                    <option value="prof">Professor</option>
+                    <option value="mc">Mc</option>
+                    <option value="neither">Neither</option>
                 </select>
             </div>
                 <!--Submit Button-->
-                <button type="submit" class="btn three w-100">Click to Generate your Mad Scientist Name</button>
+                <button type="submit" class="btn three w-100" onclick="genFullName()">Click to Generate your Mad Scientist Name</button>
                 <!--Generated Name-->
                 <div class="result" id="result"></div>
 
