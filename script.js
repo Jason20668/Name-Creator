@@ -97,11 +97,11 @@ function genLastName(lastName) {
 //Generate Suffix
 function genSuffix(favAminal) {
     if (favAminal === 'cat' && firstName >= 5 ) {
-    return `you own 27 ${favAminal}s all of which are very evil`
+    return `27 ${favAminal}s all of which are very evil`
     }else if (favAminal === 'dog'){
-    return 'you own a ${favAminal} (basic)'
+    return 'a ${favAminal} (basic)'
     } else {
-        return 'you own a ${favAminal} who is also super evil'
+        return 'a ${favAminal} who is also super evil'
     }
 }
 
@@ -129,7 +129,7 @@ function genFullName() {
     const capitalizeLastName = capitalize(newLastName)
 
     //Combine them together 
-    const fullName = `${capitalizePrefix} ${capitalizeFirstName} ${capitalizeMiddleName} ${capitalizeLastName} ${suffix}`
+    const fullName = `Your name is ${capitalizePrefix} ${capitalizeFirstName} ${capitalizeMiddleName} ${capitalizeLastName}, you own ${suffix}`
 
     //Display new name
     document.getElementById('result').textContent = fullName
