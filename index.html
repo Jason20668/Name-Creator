@@ -40,28 +40,29 @@
 
             <!--Favorite Color-->
             <div class="mb-3">
-                <label for="favColor" class="form-label">object</label>
-                <input type="text" class="form-control" id="favColor" placeholder="Enter a Random Object">
+                <label for="favColor" class="form-label">Subject</label>
+                <input type="text" class="form-control" id="favColor" placeholder="What's your least favorite school subject?">
             </div>
 
             <!--Favorite Animal-->
             <div class="mb-3">
                 <label for="favAminal" class="form-label">Favorite Animal</label>
-                <input type="text" class="form-control" id="favAminal" placeholder="Enter your Favorite Animal Group (Reptiles, Mammals, etc.)">
+                <input type="text" class="form-control" id="favAminal" placeholder="What pet would you have if you could?">
             </div>
             
             <!--Get Road Type Change this for later-->
             <div class="mb-3">
-                <label for="roadType" class="form-label">Choose a Professional Title</label>
+                <label for="roadType" class="form-label">what is your dream vacation?</label>
                 <select id="roadType" class="form-select">
-                    <option value="dr">Dr.</option>
-                    <option value="prof">Professor</option>
-                    <option value="mc">Mc</option>
-                    <option value="neither">Neither</option>
+                    <option value="tropicalVacation">A tropical vacation</option>
+                    <option value="coldVacation">A cold vacation (ex. skiing)</option>
+                    <option value="themePark">Going to theme park(s)</option>
+                    <option value="home">Staying at home</option>
+                    <option value="other">Other</option>
                 </select>
             </div>
                 <!--Submit Button-->
-                <div type="submit" class="btn three w-100" onclick = "genFullName()" >Click to Generate your Mad Scientist Name</div>
+                <div type="submit" class="btn three w-100 mb-3" onclick = "genFullName()" >Click to Generate your Mad Scientist Name</div>
                 <!--Generated Name-->
                 <div class="result" id="result"></div>
 

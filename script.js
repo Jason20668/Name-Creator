@@ -1,7 +1,9 @@
 //Generate Prefix
 function genPrefix(firstName) {
-    if (firstName.length >= 5) {
+    if (firstName.length >= 4) {
         return 'Dr.'
+    } else if (firstName.length === 6) {
+        return 'Mc'
     } else {
         return 'Professor'
     }
@@ -10,24 +12,73 @@ function genPrefix(firstName) {
 
 //Generate First Name
 function genFirstName(firstName) {
-    const firstLetter = firstName.charAt(0).toLowerCase()
+    const firstLetter = firstName.charAt(0).toLowerCase() 
     if (firstLetter === 'a') {
-        return 'Jeff'
+        return 'NotEvil'
     } else if (firstLetter === 'b') {
-        return 'Pablo'
-    } else {
-        return 'Julian'
+        return 'Evilperson'
+    } else if (firstLetter === 'c') {
+        return 'Jeff'
+    } else if (firstLetter === 'd') {
+        return 'Smeagle'
+    } else if (firstLetter === 'e') {
+        return 'Adam'
+    } else if (firstLetter === 'f') {
+        return 'Badperson'
+    } else if (firstLetter === 'g') {
+        return 'Heinz'
+    } else if (firstLetter === 'h') {
+        return 'Smelly'
+    } else if (firstLetter === 'i') {
+        return 'Jekyll'
+    } else if (firstLetter === 'j') {
+        return 'Danny'
+    } else if (firstLetter === 'k') {
+        return 'Jason'
+    } else if (firstLetter === 'l') {
+        return 'Evil'
+    } else if (firstLetter === 'm') {
+        return 'Viktor'
+    } else if (firstLetter === 'n') {
+        return 'Superbad'
+    } else if (firstLetter === 'o') {
+        return 'Django'
+    } else if (firstLetter === 'p') {
+        return 'Superevil'
+    } else if (firstLetter === 'q') {
+        return 'Hailey'
+    } else if (firstLetter === 'r') {
+        return 'Victor'
+    } else if (firstLetter === 's') {
+        return 'Tiny'
+    } else if (firstLetter === 't') {
+        return 'Vanessa'
+    } else if (firstLetter === 'u') {
+        return 'Mia'
+    } else if (firstLetter === 'v') {
+        return 'Manny'
+    } else if (firstLetter === 'w') {
+        return 'Large'
+    } else if (firstLetter === 'x') {
+        return 'Jay'
+    } else if (firstLetter === 'y') {
+        return 'Wyatt'
+    } else if (firstLetter === 'z') {
+        return 'Harley'
     }
+    return 'Unknown'
 }
 
 //Generate Middle Name
-function genMiddleName(roadType, favoriteColor) {
-    if (roadType === 'Dr') {
-        return `${favoriteColor}ridge` //if color blue middle name is Blueridge
-    } else if (roadType === 'Prof') {
-        return `${favoriteColor}son`
+function genMiddleName(roadType) {
+    if (roadType === 'tropicalVacation') {
+        return 'frank' 
+    } else if (roadType === 'coldVacation') {
+        return 'veryevil'
+    } else if (roadType === 'home') {
+        return 'badguy'
     } else {
-        return `${favoriteColor}stone`
+        return 'von'
     }
 }
 
@@ -45,7 +96,13 @@ function genLastName(lastName) {
 
 //Generate Suffix
 function genSuffix(favAminal) {
-    return `of the ${favAminal} tribe.`
+    if (favAminal === 'cat' && firstName >= 5 ) {
+    return `you own 27 ${favAminal}s all of which are very evil`
+    }else if (favAminal === 'dog'){
+    return 'you own a ${favAminal} (basic)'
+    } else {
+        return 'you own a ${favAminal} who is also super evil'
+    }
 }
 
 //Generate Full Name
@@ -81,4 +138,9 @@ function genFullName() {
 //Capitalize Function
 function capitalize(input) {
     return input.charAt(0).toUpperCase() + input.slice(1).toLowerCase()
+}
+
+
+if (!firstName || !lastName || !roadType || !favoriteColor || !favAminal) {
+    return alert("Fill out all fields or I'm sending the ghouls after you")
 }
