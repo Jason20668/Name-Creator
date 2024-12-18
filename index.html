@@ -26,45 +26,56 @@
             <!--Start of Form-->
             <form id="fantasyForm" class="mb-4">
 
-            <!--First Name-->
-            <div class="mb-3">
-                <label for="firstName" class="form-label">First Name</label>
-                <input type="text" class="form-control" id="firstName" placeholder="Enter your First Name">
-            </div>
+                <!--First Name-->
+                <div class="mb-3">
+                    <label for="firstName" class="form-label">First Name</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="Enter your First Name">
+                </div>
 
-            <!--Last Name-->
-            <div class="mb-3">
-                <label for="lastName" class="form-label">Last Name</label>
-                <input type="text" class="form-control" id="lastName" placeholder="Enter your Last Name">
-            </div>
+                <!--Last Name-->
+                <div class="mb-3">
+                    <label for="lastName" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" id="lastName" placeholder="Enter your Last Name">
+                </div>
 
-            <!--Favorite Color-->
-            <div class="mb-3">
-                <label for="favColor" class="form-label">Subject</label>
-                <input type="text" class="form-control" id="favColor" placeholder="What's your least favorite school subject?">
-            </div>
+                <!--Favorite Color-->
+                <div class="mb-3">
+                    <label for="favColor" class="form-label">Subject</label>
+                    <input type="text" class="form-control" id="favColor"
+                        placeholder="What's your least favorite school subject?">
+                </div>
 
-            <!--Favorite Animal-->
-            <div class="mb-3">
-                <label for="favAminal" class="form-label">Favorite Animal</label>
-                <input type="text" class="form-control" id="favAminal" placeholder="What pet would you have if you could?">
-            </div>
-            
-            <!--Get Road Type Change this for later-->
-            <div class="mb-3">
-                <label for="roadType" class="form-label">what is your dream vacation?</label>
-                <select id="roadType" class="form-select">
-                    <option value="tropicalVacation">A tropical vacation</option>
-                    <option value="coldVacation">A cold vacation (ex. skiing)</option>
-                    <option value="themePark">Going to theme park(s)</option>
-                    <option value="home">Staying at home</option>
-                    <option value="other">Other</option>
-                </select>
-            </div>
+                <!--Favorite Animal-->
+                <div class="mb-3">
+                    <label for="favAminal" class="form-label">Favorite Animal</label>
+                    <input type="text" class="form-control" id="favAminal"
+                        placeholder="What pet would you have if you could?">
+                </div>
+
+                <!--Get Road Type Change this for later-->
+                <div class="mb-3">
+                    <label for="roadType" class="form-label">what is your dream vacation?</label>
+                    <select id="roadType" class="form-select">
+                        <option value="tropicalVacation">A tropical vacation</option>
+                        <option value="coldVacation">A cold vacation (ex. skiing)</option>
+                        <option value="themePark">Going to theme park(s)</option>
+                        <option value="home">Staying at home</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
                 <!--Submit Button-->
-                <div type="submit" class="btn three w-100 mb-3" onclick = "genFullName()" >Click to Generate your Mad Scientist Name</div>
+                <div type="submit" class="btn three w-100 mb-3" onclick="genFullName()">Click to Generate your Mad
+                    Scientist Name</div>
                 <!--Generated Name-->
                 <div class="result" id="result"></div>
+
+                <!-- Modal -->
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <p>This is your Mad Scientist Name!</p>
+                    </div>
+                </div>
 
             </form>
         </div>

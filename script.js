@@ -85,13 +85,60 @@ function genMiddleName(roadType) {
 //Generate Last Name
 function genLastName(lastName) {
     const lastLetter = lastName.charAt(lastName.length - 1)
-    if (lastLetter === 'e') {
-        return 'Sun'
-    } else if (lastLetter === 'o') {
+    if (lastLetter === 'a') {
+        return 'Extraevilson'
+    } else if (lastLetter === 'b') {
+        return 'Malvolio'
+    } else if (lastLetter === 'c') {
+        return 'Screwyou'
+    } else if (lastLetter === 'd') {
         return 'Smeagle'
-    } else {
-        return 'Argyle'
+    } else if (lastLetter === 'e') {
+        return 'Smorgle'
+    } else if (lastLetter === 'f') {
+        return 'Boffinstein'
+    } else if (lastLetter === 'g') {
+        return 'Frankenfluff'
+    } else if (lastLetter === 'h') {
+        return 'Shockton'
+    } else if (lastLetter === 'i') {
+        return 'Whizbang'
+    } else if (lastLetter === 'j') {
+        return 'Crankshaft'
+    } else if (lastLetter === 'k') {
+        return 'Splatsmash'
+    } else if (lastLetter === 'l') {
+        return 'Tinkerwrench'
+    } else if (lastLetter === 'm') {
+        return 'Stumbleclutch'
+    } else if (lastLetter === 'n') {
+        return 'Superbad'
+    } else if (lastLetter === 'o') {
+        return 'Infinito'
+    } else if (lastLetter === 'p') {
+        return 'Bleebus'
+    } else if (lastLetter === 'q') {
+        return 'Bloobus'
+    } else if (lastLetter === 'r') {
+        return 'Blabus'
+    } else if (lastLetter === 's') {
+        return 'Blibus'
+    } else if (lastLetter === 't') {
+        return 'Blubus'
+    } else if (lastLetter === 'u') {
+        return 'Bubblesniff'
+    } else if (lastLetter === 'v') {
+        return 'Whizzywig'
+    } else if (lastLetter === 'w') {
+        return 'Supasmort'
+    } else if (lastLetter === 'x') {
+        return 'Frankenstein'
+    } else if (lastLetter === 'y') {
+        return 'Stumbleclutch'
+    } else if (lastLetter === 'z') {
+        return 'Vortex'
     }
+    return 'Unknown'
 }
 
 //Generate Suffix
@@ -99,9 +146,9 @@ function genSuffix(favAminal) {
     if (favAminal === 'cat' && firstName >= 5 ) {
     return `27 ${favAminal}s all of which are very evil`
     }else if (favAminal === 'dog'){
-    return 'a ${favAminal} (basic)'
+    return `a ${favAminal} who is very nice and lovable`
     } else {
-        return 'a ${favAminal} who is also super evil'
+        return `a ${favAminal} who is also super evil`
     }
 }
 
@@ -131,6 +178,11 @@ function genFullName() {
     //Combine them together 
     const fullName = `Your name is ${capitalizePrefix} ${capitalizeFirstName} ${capitalizeMiddleName} ${capitalizeLastName}, you own ${suffix}`
 
+        if (favoriteColor.toLowerCase() === 'science') {
+        var modal = document.getElementById("myModal");
+          modal.style.display = "block"; // Show the modal
+        }
+
     //Display new name
     document.getElementById('result').textContent = fullName
 }
@@ -141,6 +193,3 @@ function capitalize(input) {
 }
 
 
-if (!firstName || !lastName || !roadType || !favoriteColor || !favAminal) {
-    return alert("Fill out all fields or I'm sending the ghouls after you")
-}
