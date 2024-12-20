@@ -152,6 +152,34 @@ function genSuffix(favAminal) {
     }
 }
 
+//Generate random place and goal
+function RandomPlaceAndGoal() {
+let randomNumber = Math.floor(Math.random() * 6)
+//All possible answers
+switch (randomNumber) {
+  case 0:
+    return 'You live in an oddly shaped skyscraper. Your goal is to take over the tristate area.'
+    break;
+  case 1:
+    return 'You live in a very old and scary castle. Your goal is revive the dead.'
+    break;
+  case 2:
+    return 'You live in your moms house. She does not let you do any experiments.'
+    break;
+  case 3:
+    return 'You live in a secret underground lair. Your goal is to take over the entire world.'
+    break;
+  case 4:
+    return 'You live in Latveria. Your goal is to defeat a rock, a slinky, some fire, and an invisible lady.'
+    break;
+  case 5:
+    return 'You live in an abandoned house. Your goal is to become immortal.'
+    break;
+    }
+}
+const randomPlaceAndGoal = RandomPlaceAndGoal();
+
+
 //Generate Full Name
 function genFullName() {
     //Get users inputs from HTML
@@ -175,8 +203,8 @@ function genFullName() {
     const capitalizeMiddleName = capitalize(middleName)
     const capitalizeLastName = capitalize(newLastName)
 
-    //Combine them together 
-    const fullName = `Your name is ${capitalizePrefix} ${capitalizeFirstName} ${capitalizeMiddleName} ${capitalizeLastName}, you own ${suffix}`
+    //Combine them together
+    const fullName = `Your name is ${capitalizePrefix} ${capitalizeFirstName} ${capitalizeMiddleName} ${capitalizeLastName}, you own ${suffix}. ${randomPlaceAndGoal}`
 
         if (favoriteColor.toLowerCase() === 'science') {
         var modal = document.getElementById("myModal");
