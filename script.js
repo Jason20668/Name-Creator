@@ -143,7 +143,7 @@ function genLastName(lastName) {
 
 //Generate Suffix
 function genSuffix(favAminal) {
-    if (favAminal === 'cat' && firstName >= 5 ) {
+    if (favAminal === 'cat' && firstName === 5 ) {
     return `27 ${favAminal}s all of which are very evil`
     }else if (favAminal === 'dog'){
     return `a ${favAminal} who is very nice and lovable`
@@ -170,7 +170,7 @@ switch (randomNumber) {
     return 'You live in a secret underground lair. Your goal is to take over the entire world.'
     break;
   case 4:
-    return 'You live in Latveria. Your goal is to defeat a rock, a slinky, some fire, and an invisible lady.'
+    return 'You live in a castle and wear a metal mask. Your goal is to defeat a rock, a slinky, some fire, and an invisible lady.'
     break;
   case 5:
     return 'You live in an abandoned house. Your goal is to become immortal.'
@@ -207,8 +207,8 @@ function genFullName() {
     const fullName = `Your name is ${capitalizePrefix} ${capitalizeFirstName} ${capitalizeMiddleName} ${capitalizeLastName}, you own ${suffix}. ${randomPlaceAndGoal}`
 
         if (favoriteColor.toLowerCase() === 'science') {
-        var modal = document.getElementById("myModal");
-          modal.style.display = "block"; // Show the modal
+        alert('Your not fit to be a mad scientist!')
+        close()
         }
 
     //Display new name
